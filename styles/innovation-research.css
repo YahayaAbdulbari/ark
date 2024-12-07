@@ -1,0 +1,94 @@
+:root{
+    --myfont: sans-serif;
+    --valid: rgb(0, 255, 0);
+    --invalid: red;
+    --warning: yellow;
+    --purple: rgb(142, 1, 155);
+    --darkpurple: rgb(65, 0, 71);
+    --dark-navyblue: rgb(5, 5, 37); 
+    --wheat: rgb(245, 233, 212);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+    font-family: var(--myfont);
+}
+
+.innovation-research{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: whitesmoke;
+    position: relative;
+}
+
+.innovation-research h2{
+    color: var(--dark-navyblue);
+    font-size: 2.5rem;
+    margin: 30px 0;
+}
+
+.innovation-research .research{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.innovation-research .research .card{
+    width: 100%;
+    height: 380px;
+    color: var(--dark-navyblue);
+    transition: .3s;
+}
+.innovation-research .research .card:hover{
+    opacity: .5;
+    border: 1px solid var(--dark-navyblue);
+}
+.innovation-research .research .card img{
+    width: 100%;
+    height: 250px;
+    align-self: first baseline;
+}
+.innovation-research .research .card p{
+    margin: 20px;
+    opacity: .7;
+}
+.innovation-research .research .card h3{
+    margin: 0 20px;
+}
+
+@media (max-width:600px) {
+    .innovation-research{
+        width: 100vw;
+        padding: 40px 30px;
+        background-color: whitesmoke;
+    }
+    .innovation-research h2{
+        font-size: 2rem;
+        margin: 20px 0;
+    }
+    .innovation-research .research{
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .innovation-research .research .card{
+        height: 350px;
+    }
+    .innovation-research .research .card img{
+        height: 200px;
+    }
+}

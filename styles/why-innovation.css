@@ -1,0 +1,97 @@
+:root{
+    --myfont: sans-serif;
+    --valid: rgb(0, 255, 0);
+    --invalid: red;
+    --warning: yellow;
+    --purple: rgb(142, 1, 155);
+    --darkpurple: rgb(65, 0, 71);
+    --dark-navyblue: rgb(5, 5, 37); 
+    --wheat: rgb(245, 233, 212);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+    font-family: var(--myfont);
+}
+
+.why-innovation{
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 100px;
+    border-bottom: 1px solid black;
+}
+.why-innovation .innvt-text{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 40px;
+    color: var(--dark-navyblue);
+    text-transform: capitalize;
+}
+.why-innovation .innvt-text h2{
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+}
+.why-innovation .innvt-text h3{
+    font-size: 1.6rem;
+}
+.why-innovation .innvt-text p{
+    margin: 10px auto;
+    line-height: 25px;
+    text-transform: none;
+}
+.why-innovation .innvt-img{
+    width: 60%;
+    height: 100%;
+}
+.why-innovation .innvt-img img{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:600px) {
+    
+    .why-innovation{
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        top: 60px;
+    }
+    .why-innovation .innvt-text{
+        width: 100%;
+        height: 55%;
+        padding: 30px;
+    }
+    .why-innovation .innvt-text h2{
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    .why-innovation .innvt-text h3{
+        font-size: 1.4rem;
+    }
+    .why-innovation .innvt-img{
+        width: 100%;
+        height: 45%;
+    }
+    .why-innovation .innvt-img img{
+        width: 100%;
+        height: 100%;
+    }
+
+}

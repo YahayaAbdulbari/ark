@@ -1,0 +1,125 @@
+:root{
+    --myfont: sans-serif;
+    --valid: rgb(0, 255, 0);
+    --invalid: red;
+    --warning: yellow;
+    --purple: rgb(142, 1, 155);
+    --darkpurple: rgb(65, 0, 71);
+    --dark-navyblue: rgb(5, 5, 37); 
+    --wheat: rgb(245, 233, 212);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+    font-family: var(--myfont);
+}
+
+.subscribe{
+    width: 100%;
+    height: 40vh;
+    padding: 40px 100px;
+    background-color: var(--dark-navyblue);
+    position: relative;
+}
+.subscribe .content{
+    width: 60%;
+    height: 100%;
+    color: white;
+    background-color: var(--dark-navyblue);
+    line-height: 30px;
+}
+.subscribe .content p{
+    opacity: .7;
+}
+.subscribe .content h1{
+    margin-bottom: 30px;
+}
+.subscribe .content a{
+    font-size: 1.4rem;
+    padding: 10px 20px;
+    background-color: white;
+    text-decoration: none;
+}
+.subscribe .content a:hover{
+    color: white;
+    box-shadow: 0 0 5px 2px white;
+    background-color: var(--dark-navyblue);
+}
+/* logo */
+.subscribe .subscribe-logo{
+    width: 130px;
+    height: auto;
+    padding: 5px;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+.subscribe .subscribe-logo:hover{
+    opacity: .7;
+}
+
+.subscribe .subscribe-logo a{
+    color: white;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    height: 100%;
+}
+.subscribe .subscribe-logo a h2{
+    margin: 0%;
+    margin-left: 20px;
+}
+.subscribe .subscribe-logo a p{
+    color: white;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+.subscribe .subscribe-logo a i{
+    position: absolute;
+    left: 17px;
+    top: 2px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+@media (max-width:600px) {
+    .subscribe{
+        width: 100%;
+        height: auto;
+        padding: 40px 30px;
+        background-color: var(--dark-navyblue);
+        position: relative;
+    }
+    .subscribe .content{
+        width: 80%;
+        height: 100%;
+        color: white;
+        background-color: var(--dark-navyblue);
+        line-height: 30px;
+    }
+    .subscribe .content p{
+        opacity: .7;
+    }
+    .subscribe .content h1{
+        margin-bottom: 30px;
+    }
+    .subscribe .content a{
+        font-size: 1.4rem;
+        padding: 10px 20px;
+        background-color: white;
+        text-decoration: none;
+    }
+    .subscribe .content a:hover{
+        color: white;
+        box-shadow: 0 0 5px 2px white;
+        background-color: var(--dark-navyblue);
+    }
+}

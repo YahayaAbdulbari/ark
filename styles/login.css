@@ -1,0 +1,218 @@
+:root{
+    --myfont: sans-serif;
+    --valid: rgb(0, 255, 0);
+    --invalid: red;
+    --warning: yellow;
+    --purple: rgb(142, 1, 155);
+    --darkpurple: rgb(65, 0, 71);
+    --dark-navyblue: rgb(5, 5, 37); 
+    --wheat: rgb(245, 233, 212);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--dark-navyblue);
+    font-family: var(--myfont);
+}
+
+.formbox{
+    width: 400px;
+    height: auto;
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.formbox form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.formbox form .logo{
+    width: 130px;
+    height: auto;
+    padding: 5px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.formbox form .logo:hover{
+    opacity: .7;
+}
+
+.formbox form .logo a{
+    color: var(--dark-navyblue);
+    text-align: center;
+    position: relative;
+    height: 100%;
+}
+.formbox form .logo a h2{
+    margin: 0%;
+    margin-left: 20px;
+}
+.formbox form .logo a p{
+    color: var(--dark-navyblue);
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+.formbox form .logo a i{
+    position: absolute;
+    left: 17px;
+    top: 2px;
+    font-size: 1.5rem;
+    color: var(--dark-navyblue);
+}
+
+.formbox form h2{
+    color: var(--dark-navyblue);
+    text-shadow: 1px 1px 1px black;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    align-self: flex-start;
+    margin-left: 38px;
+}
+
+.formbox form .inputbox{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.formbox form .inputbox input{
+    width: 100%;
+    height: 40px;
+    border: 0.5px solid var(--dark-navyblue);
+    outline: none;
+    padding-left: 30px;
+    font-size: .9rem;
+    border-radius: 3px;
+}
+.formbox form .inputbox input:focus{
+    border: 0.5px solid blue;
+}
+.formbox form .inputbox input::placeholder{
+    font-size: .8rem;
+}
+.formbox form .inputbox label{
+    color: var(--dark-navyblue);
+    align-self: flex-start;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 1px black;
+    margin-bottom: 5px;
+}
+
+.formbox form .inputerror{
+    display: none;
+}
+
+.formbox form .btn{
+    margin-top: 10px;
+}
+.formbox form .btn input{
+    color: white;
+    padding-left: 0%;
+    background-color: var(--dark-navyblue);
+    transition: .5s;
+}
+.formbox form .btn input:hover{
+    background-color: var(--valid);
+}
+
+.formbox form a p{
+    margin-top: 5px;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+.formbox form a{
+    text-decoration: none;
+}
+
+#resetpass p{
+    color: red;
+}
+.resetpass p{
+    color: var(--dark-navyblue);
+    span{
+        color: var(--valid);
+    }
+}
+
+@media (max-width:600px) {
+    .formbox{
+        width: 90vw;
+        height: auto;
+        top: 40%;
+    }
+    
+    .formbox form h2{
+        color: var(--dark-navyblue);
+        text-shadow: 1px 1px 1px black;
+        font-size: 1.6rem;
+    }
+
+    .formbox form .inputbox input{
+        height: 30px;
+        padding-left: 20px;
+        font-size: .9rem;
+    }
+    .formbox form .inputbox input::placeholder{
+        font-size: .8rem;
+    }
+    .formbox form .inputbox label{
+        font-size: 1.1rem;
+    }
+    
+    .formbox form .btn{
+        margin-top: 8px;
+        height: 35px;
+        background-color: var(--dark-navyblue);
+        border-radius: 3px;
+    }
+    .formbox form .btn input{
+        padding-left: 0%;
+    }
+    
+    .formbox form a p{
+        margin-top: 5px;
+        font-size: .9rem;
+        color: white;
+    }
+
+    .formbox form #signup span{
+        font-size: 1rem;
+    }
+}
+
+/* logo animation */
+.fa-earth-europe{
+    animation: logo 3s infinite ease;
+}
+
+@keyframes logo {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

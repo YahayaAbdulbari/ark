@@ -1,0 +1,138 @@
+:root{
+    --myfont: sans-serif;
+    --valid: rgb(0, 255, 0);
+    --invalid: red;
+    --warning: yellow;
+    --purple: rgb(142, 1, 155);
+    --darkpurple: rgb(65, 0, 71);
+    --dark-navyblue: rgb(5, 5, 37); 
+    --wheat: rgb(245, 233, 212);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+    font-family: var(--myfont);
+}
+
+.strategy{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 50px;
+    background-color: var(--dark-navyblue);
+    position: relative;
+    top: 100px;
+}
+.strategy .strg-text{
+    width: 50%;
+    height: 40%;
+    background-color: var(--dark-navyblue);
+    align-self: flex-start;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 25px;
+    /* border: 1px solid white; */
+}
+.strategy .strg-text h2{
+    align-self: flex-start;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.strategy .strg-cards{
+    width: 100%;
+    height: 60%;
+    background-color: var(--dark-navyblue);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.strategy .strg-cards .card{
+    width: 100%;
+    height: 100%;
+    grid-column: span 1;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.strategy .strg-cards .card{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    background-size: cover;
+}
+.strategy .strg-cards .card:hover{
+    opacity: .3;
+}
+.strategy .strg-cards :nth-child(1){
+    background-image: url(../images/venture.png);
+}
+.strategy .strg-cards :nth-child(2){
+    background-image: url(../images/cryptoasset.png);
+}
+.strategy .strg-cards :nth-child(3){
+    background-image: url(../images/cryptocurrency.jpg);
+}
+.strategy .strg-cards :nth-child(4){
+    background-image: url(../images/disruptive.png);
+}
+.strategy .strg-cards .card h3{
+    color: white;
+    background: transparent;
+    align-self: last baseline;
+    margin-bottom: 100px;
+    text-transform: capitalize;
+}
+
+@media (max-width:600px) {
+    .strategy{
+        width: 100%;
+        height: auto;
+        padding: 30px;
+        top: 40px;
+    }
+    .strategy .strg-text{
+        width: 100%;
+        height: auto;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+    .strategy .strg-text p{
+        font-size: .9rem;
+    }
+    .strategy .strg-text h2{
+        margin-bottom: 10px;
+    }
+    .strategy .strg-cards{
+        width: 100%;
+        height: auto;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .strategy .strg-cards .card{
+        width: 100%;
+        height: 300px;
+        border: .5px solid white;
+    }
+    .strategy .strg-cards .card h3{
+        font-size: 1rem;
+        margin-bottom: 50px;
+    }
+}

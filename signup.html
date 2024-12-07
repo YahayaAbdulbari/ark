@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="./bootstrap5/css/all.css">
+    <link rel="stylesheet" href="./styles/login.css">
+</head>
+<body>
+
+    <div class="formbox">
+
+        <!-- sign-up form -->
+        <form action="./dashboard.html" method="post">
+            
+            <div class="logo">
+                <a href="./index.html">
+                    <i class="fa-solid fa-earth-europe"></i>
+                    <h2>ARK</h2>
+                    <p>investment</p>
+                </a>
+            </div>
+
+            <h2>User Signup</h2>
+
+            <!-- username -->
+            <div class="inputbox">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" placeholder="Username" required>
+            </div>
+            <div class="inputerror">
+                <p class="error">error message</p>
+            </div>
+
+            <!-- email address -->
+            <div class="inputbox">
+                <label for="email">Email-address</label>
+                <input type="email" name="email" id="email" placeholder="Email-address" required>
+            </div>
+            <div class="inputerror">
+                <p class="error">error message</p>
+            </div>
+
+            <!-- password -->
+            <div class="inputbox">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Password" required>
+            </div>
+            <div class="inputerror">
+                <p class="error">error message</p>
+            </div>
+
+            <!-- submit -->
+            <div class="inputbox btn">
+                <input type="submit" name="signup" id="signup" value="Signup">
+            </div>
+
+            <a href="./login.html" class="resetpass">
+                <p><span>Login</span> if you dont have account</p>
+            </a>
+
+        </form>
+
+    </div>
+    
+</body>
+</html>
