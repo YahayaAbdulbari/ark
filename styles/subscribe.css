@@ -106,13 +106,15 @@ body{
         line-height: 30px;
     }
     .subscribe .content p{
+        font-size: .9rem;
         opacity: .7;
     }
     .subscribe .content h1{
+        font-size: 1rem;
         margin-bottom: 30px;
     }
     .subscribe .content a{
-        font-size: 1.4rem;
+        font-size: 1rem;
         padding: 10px 20px;
         background-color: white;
         text-decoration: none;
