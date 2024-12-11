@@ -1,0 +1,297 @@
+:root{
+    --myfont: sans-serif;
+    --valid: rgb(0, 255, 0);
+    --invalid: red;
+    --warning: yellow;
+    --purple: rgb(142, 1, 155);
+    --darkpurple: rgb(65, 0, 71);
+    --dark-navyblue: rgb(5, 5, 37); 
+    --wheat: rgb(245, 233, 212);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+    font-family: var(--myfont);
+}
+
+.help-section{
+    position: static;
+    margin-top: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid red;
+}
+@media (max-width:600px) {
+    .help-section{
+        margin-top: 65px;
+        flex-direction: column;
+    }
+}
+
+
+.feedback{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 40px auto;
+}
+
+.feedbackform{
+    width: 400px;
+    height: auto;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--dark-navyblue);
+    border-radius: 5px;
+    position: relative;
+}
+
+.feedbackform:hover h2{
+    transform: scale(1.3);
+}
+
+.feedbackform i{
+    position: absolute;
+    top: -35px;
+    font-size: 4rem;
+    color: var(--orange);
+}
+.feedbackform h2{
+    color: var(--orange);
+    margin: 20px 0;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 1px silver;
+    transition: .5s;
+}
+.feedbackform label{
+    color: var(--White);
+    align-self: flex-start;
+    font-size: 1.2rem;
+}
+.feedbackform input{
+    width: 100%;
+    height: 30px;
+    margin: 5px 0 20px 0;
+    outline: none;
+    padding-left: 20px;
+    border-radius: 3px;
+    border: 1px solid var(--dark-navyblue);
+}
+.feedbackform textarea{
+    width: 100%;
+    height: 150px;
+    outline: none;
+    resize: none;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid var(--dark-navyblue);
+}
+.feedbackform button{
+    width: 100%;
+    height: 35px;
+    border: none;
+    background-color: var(--dark-navyblue);
+    color: white;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    transition: .5s;
+    border-radius: 3px;
+}
+.feedbackform button:hover{
+    background-color: var(--valid);
+    box-shadow: 0 0 1px .5px var(--White);
+}
+
+@media (max-width:600px) {
+    .feedback{
+        flex-direction: column-reverse;
+    }
+    .feedbackform{
+        width: 95vw;
+        margin-top: 20px;
+    }
+    .feedbackform i{
+        top: 0px;
+        font-size: 2.5rem;
+    }
+    .feedbackform label{
+        font-size: 1.1rem;
+    }
+
+    .feedback .contact-our-agent{
+        width: 90vw;
+        height: auto;
+        border: 1px solid var(--dark-navyblue);
+    }
+}
+
+@media (min-width:610px) and (max-width:900px) {
+    .feedback{
+        flex-direction: column;
+    }
+    .feedbackform{
+        width: 95vw;
+        padding: 50px;
+    }
+    .feedbackform i{
+        top: 10px;
+    }
+    .feedbackform h2{
+        font-size: 3rem;
+        margin-top: 40px;
+    }
+    .feedbackform label{
+        font-size: 2rem;
+    }
+    .feedbackform input{
+        height: 50px;
+        font-size: 1.8rem;
+        margin: 5px 0 40px 0;
+    }
+    .feedbackform textarea{
+        height: 300px;
+    }
+    .feedbackform button{
+        height: 50px;
+        font-size: 2rem;
+        margin-top: 40px;
+    }
+}
+
+/* our agent */
+.feedback .contact-our-agent{
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 0 1px 2px rgb(197, 197, 197) inset;
+    border-radius: 5px;
+}
+
+.feedback .contact-our-agent:hover h3{
+    transform: scale(1.3);
+}
+
+.feedback .contact-our-agent h3{
+    font-size: 1.8rem;
+    color: var(--orange);
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px var(--dark-navyblue);
+    transition: .5s;
+}
+
+.feedback .contact-our-agent p{
+    line-height: 25px;
+    font-size: 1.2rem;
+}
+
+.feedback .contact-our-agent .help-info{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.feedback .contact-our-agent .help-info a{
+    width: 100%;
+    color: var(--dark-navyblue);
+    text-decoration: none;
+}
+
+.feedback .contact-our-agent .help-info .info{
+    width: 100%;
+    margin: 10px 0;
+    color: var(--White);
+    display: flex;
+    padding: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid var(--dark-navyblue);
+}
+
+.feedback .contact-our-agent .help-info .info:hover i{
+    animation-name: shake;
+    animation-duration: .2s;
+}
+
+.feedback .contact-our-agent .help-info .info i{
+    font-size: 1.8rem;
+    margin-right: 20px;
+    transition: .5s;
+}
+
+@keyframes shake {
+    25%{
+        transform: rotate(90deg);
+        transform: scale(.5);
+    }
+    100%{
+        transform: rotate(-90deg);
+        transform: scale(1.5);
+    }
+}
+
+@media (max-width:600px) {
+    .feedback .contact-our-agent{
+        width: 95vw;
+    }
+    .feedback .contact-our-agent h3{
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+    }
+    .feedback .contact-our-agent p{
+        font-size: 1rem;
+        line-height: 20px;
+    }
+    .feedback .contact-our-agent .help-info .info i{
+        margin-right: 10px;
+    }
+    .feedback .contact-our-agent .help-info .info{
+        margin: 5px 0;
+        padding: 10px;
+    }
+    .feedback .contact-our-agent .help-info .info p{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width:610px) and (max-width:900px){
+    .feedback .contact-our-agent{
+        width: 95vw;
+        margin-top: 40px;
+    }
+    .feedback .contact-our-agent h3{
+        font-size: 3rem;
+        /* margin-bottom: 10px; */
+    }
+    .feedback .contact-our-agent p{
+        font-size: 2rem;
+        line-height: 40px;
+    }
+    .feedback .contact-our-agent .help-info .info{
+        margin: 15px 0;
+        padding: 20px;
+    }
+    .feedback .contact-our-agent .help-info .info i{
+        font-size: 4rem;
+    }
+    .feedback .contact-our-agent .help-info .info p{
+        font-size: 2rem;
+    }
+}

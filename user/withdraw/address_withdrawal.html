@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Withdraw To Account</title>
+    <link rel="stylesheet" href="./bootstrap5/css/all.css">
+    <link rel="stylesheet" href="./bank.css">
+</head>
+<body>
+
+
+    <div class="formbox">
+
+        <!-- sign-up form -->
+        <form action="./kyc.html" method="post">
+            <h2>Withdraw With Address</h2>
+
+            <!-- country -->
+            <div class="inputbox">
+                <label for="country">Country</label>
+                <input type="text" name="country" id="country" placeholder="country" required>
+            </div>
+
+            <!-- address -->
+            <div class="inputbox">
+                <label for="address">Address</label>
+                <input type="text" name="address" id="address" placeholder="Address" required>
+            </div>
+
+            <!-- address -->
+            <div class="inputbox">
+                <label for="address-num">Address number</label>
+                <input type="number" name="address-num" id="address-num" placeholder="address number" required>
+            </div>
+            
+            <!-- password -->
+            <div class="inputbox">
+                <label for="amount">Withdrawal amount</label>
+                <input type="number" name="amount" id="amount" placeholder="Withdrawal amount" required>
+            </div>
+
+            <!-- password -->
+            <div class="inputbox checkbox">
+                <input type="checkbox" required>
+                All bank details are correct
+            </div>
+
+            <!-- submit -->
+            <div class="inputbox btn">
+                <input type="submit" name="Withdraw" id="Withdraw" value="Withdraw">
+            </div>
+
+        </form>
+
+    </div>
+    
+</body>
+</html>

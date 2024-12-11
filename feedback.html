@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>help</title>
+    <link rel="stylesheet" href="./bootstrap5/css/all.css">
+    <link rel="stylesheet" href="./styles/nav.css">
+    <link rel="stylesheet" href="./styles/subscribe.css">
+    <link rel="stylesheet" href="./styles/feedback.css">
+</head>
+<body>
+
+    <!-- ALL NAVIGATIONS -->
+    <header>
+        <div class="top">
+            <!-- logo -->
+            <div class="logo">
+                <a href="./index.html">
+                    <!-- <i class="fa-brands fa-algolia"></i> -->
+                    <i class="fa-solid fa-earth-europe"></i>
+                    <h2>ARK</h2>
+                    <p>investment</p>
+                </a>
+            </div>
+            <!-- sigup/login btns -->
+            <div class="nav-btns">
+                <a href="./login.html"><button id="signin">sign in</button></a>
+                <a href="./signup.html"><button id="signup">sign up</button></a>
+            </div>
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+        <div class="bottom">
+            <nav class="nav">
+                <ul>
+                    <a href="./index.html"><li>home</li></a>
+                    <a href="./login.html"><li>login</li></a>
+                    <a href="./signup.html"><li>register</li></a>
+                    <a href="./user/dashboard.html"><li>profile</li></a>
+                    <a href="#"><li>invest</li></a>
+                    <a href="./feedback.html"><li>contact</li></a>
+                    <a href="#"><li>platforms</li></a>
+                    <a href="./about.html"><li>about</li></a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- side navigation links -->
+    <aside class="aside">
+        <nav>
+            <h2>side menu</h2>
+            <ul>
+                <a href="./index.html"><li class="active"><i class="fa-solid fa-house"></i>home</li></a>
+                <a href="./login.html"><li><i class="fa-solid fa-unlock"></i>login</li></a>
+                <a href="./signup.html"><li><i class="fa-solid fa-registered"></i>register</li></a>
+                <a href="./user/dashboard.html"><li><i class="fa-solid fa-user-alt"></i>profile</li></a>
+                <a href="#"><li><i class="fa-solid fa-money-bill"></i>invest</li></a>
+                <a href="./feedback.html"><li><i class="fa-solid fa-user-shield"></i>contact</li></a>
+                <a href="#"><li><i class="fa-solid fa-users"></i>platforms</li></a>
+                <a href="./about.html"><li><i class="fa-solid fa-building"></i>about</li></a>
+            </ul>
+        </nav>
+        <script src="../script/mainNavigation.js"></script>
+    </aside>
+    <!-- ALL NAVIGATIONS -->
+
+    <section class="help-section">
+        <!-- feedback form -->
+        <div class="feedback">
+            <form action="" class="feedbackform">
+                <i class="fa-brands fa-fantasy-flight-games" id="logo"></i>
+                <h2>send your feedback</h2>
+                <label for="name">Username</label>
+                <input type="text" name="username" placeholder="username" required>
+                <label for="email">Email address</label>
+                <input type="email" name="email" placeholder="email address" required>
+                <textarea name="feedback" id="feedback"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+
+            <!-- our agent -->
+            <div class="contact-our-agent">
+                <h3>We're here to help</h3>
+                <p>from offering expert advices to solve complex problems, We've got you covered.</p>
+                <div class="help-info">
+                    <a href="#">
+                        <div class="info">
+                            <i class="fa-solid fa-message"></i>
+                            <p>Chart with our customer care</p>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="info">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <p>Requst a callback</p>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="info">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>Call 01 361 1149</p>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="info">
+                            <i class="fa-solid fa-gear"></i>
+                            <p>Request for technical support</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- subscribe -->
+    <section class="subscribe">
+        <div class="content">
+            <p>Subscribe to ARK’s Innovation Research</p>
+            <h1>Receive Regular Updates And Notifications On ARK’s Latest Research Because Investing In Innovation Starts With Understanding It</h1>
+            <a href="./signup.html">join free</a>
+        </div>
+        <div class="subscribe-logo">
+            <a href="./index.html">
+                <!-- <i class="fa-brands fa-algolia"></i> -->
+                <i class="fa-solid fa-earth-europe"></i>
+                <h2>ARK</h2>
+                <p>investment</p>
+            </a>
+        </div>
+    </section>
+    <!-- subscribe -->
+</body>
+</html>

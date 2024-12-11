@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pending</title>
+    <link rel="stylesheet" href="../styles/withdrawal_pending.css">
+</head>
+<body>
+
+    <section class="pending-section">
+        <div class="warning">
+            <div class="img">
+                <img src="../images/warning.png" alt="warning">
+            </div>
+            <p>
+                Transaction pending!
+            </p>
+            <p>
+                kyc verification in progress. Unable to continue the withdrawal process, please contact our customer care.
+            </p>
+            <a href="../feedback.html"><button>OK</button></a>
+        </div>
+    </section>
+
+    <script>
+        // get the container
+        const warning = document.querySelector('.warning');
+
+        // check if the animation end
+        warning.addEventListener('animationend' , ()=>{
+            warning.style.opacity='1';
+        });
+    </script>
+    
+</body>
+</html>
